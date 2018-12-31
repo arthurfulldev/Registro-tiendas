@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Providers;
+namespace TiendaBNN\Providers;
 
 use Illuminate\Support\ServiceProvider;
 

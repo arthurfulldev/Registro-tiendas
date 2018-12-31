@@ -2,7 +2,16 @@
 Requerimiento Backend BNN
 
 
-## Tegnologias implementadas
+## Tecnologias implementadas.
 * PHP 5.3.36
-* Laravel 5.3
+* Laravel 5.3.30
 
+## Instalacion
+* clonar de github
+```
+    git clone https://github.com/arthurfulldev/TiendaBNN.git
+```
+* actualizar vendor 
+```
+    composer install
+```

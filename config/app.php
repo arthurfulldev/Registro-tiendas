@@ -172,12 +172,11 @@ return [
         /*
          * Application Service Providers...
          */
-        App\Providers\AppServiceProvider::class,
-        App\Providers\AuthServiceProvider::class,
-        // App\Providers\BroadcastServiceProvider::class,
-        App\Providers\EventServiceProvider::class,
-        App\Providers\RouteServiceProvider::class,
-
+        TiendaBNN\Providers\AppServiceProvider::class,
+        TiendaBNN\Providers\AuthServiceProvider::class,
+        // TiendaBNN\Providers\BroadcastServiceProvider::class,
+        TiendaBNN\Providers\EventServiceProvider::class,
+        TiendaBNN\Providers\RouteServiceProvider::class,
     ],
 
     /*
