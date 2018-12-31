@@ -34,7 +34,7 @@ FROM stores s
     INNER JOIN thownships t ON t.id = a.thownship_id;
 ```
 ### schema
-![schema]((https://github.com/arthurfulldev/TiendaBNN/blob/master/evidencias/schema.png?raw=true "Schema de la base completo")
+![schema](https://raw.githubusercontent.com/arthurfulldev/TiendaBNN/master/evidencias/schema.png "Schema de la base completo")
 
 ## Rest api routes
-![logo](https://github.com/arthurfulldev/TiendaBNN/blob/master/evidencias/restroutes.png?raw=true "rutas restfull")
+![logo](https://raw.githubusercontent.com/arthurfulldev/TiendaBNN/master/evidencias/restroutes.png "rutas restfull")
