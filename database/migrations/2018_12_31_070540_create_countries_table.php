@@ -5,8 +5,7 @@ use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Eloquent\SoftDeletes;
 
-
-class CreateStoresTable extends Migration
+class CreateCountriesTable extends Migration
 {
     use SoftDeletes;
     /**
@@ -16,9 +15,8 @@ class CreateStoresTable extends Migration
      */
     public function up()
     {
-        Schema::create('stores', function (Blueprint $table) {
+        Schema::create('countries', function (Blueprint $table) {
             $table->increments('id');
-            $table->text('logo');
             $table->text('name');
             $table->timestamps();
             $table->softDeletes();
@@ -32,6 +30,6 @@ class CreateStoresTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('stores');
+        Schema::dropIfExists('countries');
     }
 }
