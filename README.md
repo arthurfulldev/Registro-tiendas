@@ -1,0 +1,2 @@
+# TiendaBNN
+Requerimiento Backend BNN
