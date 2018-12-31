@@ -17,8 +17,8 @@ class CreateThownshipsTable extends Migration
     {
         Schema::create('thownships', function (Blueprint $table) {
             $table->increments('id');
-            $table->text('name');
-            $table->integer('zc');
+            $table->string('name');
+            $table->integer('zip');
             $table->timestamps();
             $table->softDeletes();
         });

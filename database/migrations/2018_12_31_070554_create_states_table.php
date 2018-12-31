@@ -17,7 +17,7 @@ class CreateStatesTable extends Migration
     {
         Schema::create('states', function (Blueprint $table) {
             $table->increments('id');
-            $table->text('name');
+            $table->string('name');
             $table->timestamps();
             $table->softDeletes();
         });

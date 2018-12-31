@@ -17,8 +17,8 @@ class CreateAddressesTable extends Migration
     {
         Schema::create('addresses', function (Blueprint $table) {
             $table->increments('id');
-            $table->text('street');
-            $table->text('number');
+            $table->string('street');
+            $table->string('number');
             $table->unsignedInteger('country_id');
             $table->unsignedInteger('state_id');
             $table->unsignedInteger('thownship_id');
@@ -31,16 +31,17 @@ class CreateAddressesTable extends Migration
                         ->on('countries')
                         ->onDelete('cascade')
                         ->onUpdate('cascade');
-            $table->foreign('state_id')
-                        ->references('id')
-                        ->on('states')
-                        ->onDelete('cascade')
-                        ->onUpdate('cascade');
             $table->foreign('thownship_id')
                         ->references('id')
                         ->on('thownships')
                         ->onDelete('cascade')
                         ->onUpdate('cascade');
+            $table->foreign('state_id')
+                        ->references('id')
+                        ->on('states')
+                        ->onDelete('cascade')
+                        ->onUpdate('cascade');
+            
         });
     }
 
