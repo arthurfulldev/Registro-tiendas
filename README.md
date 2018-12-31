@@ -33,3 +33,8 @@ FROM stores s
     INNER JOIN states st ON st.id = a.state_id
     INNER JOIN thownships t ON t.id = a.thownship_id;
 ```
+### schema
+![schema]((https://github.com/arthurfulldev/TiendaBNN/blob/master/evidencias/schema.png?raw=true "Schema de la base completo")
+
+## Rest api routes
+![logo](https://github.com/arthurfulldev/TiendaBNN/blob/master/evidencias/restroutes.png?raw=true "rutas restfull")
