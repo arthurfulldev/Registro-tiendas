@@ -4,7 +4,7 @@ namespace TiendaBNN\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class store extends Controller
+class StoreController extends Controller
 {
     /**
      * Display a listing of the resource.

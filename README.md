@@ -18,8 +18,8 @@ Requerimiento Backend BNN
 ## Query Mysql all bd
 ```
 SELECT
-	s.id,
-	s.name   'TIENDA',
+    s.id,
+    s.name   'TIENDA',
     s.logo   'LOGO',
     a.street 'CALLE',
     a.number 'NUMERO',
