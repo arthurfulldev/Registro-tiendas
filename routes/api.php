@@ -18,3 +18,5 @@ use Illuminate\Http\Request;
 })->middleware('auth:api');*/
 
 Route::resource('tiendaBNN', 'StoreController');
+
+Route::get('report', 'reportController@pdf')->name('report.pdf');

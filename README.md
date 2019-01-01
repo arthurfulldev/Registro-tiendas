@@ -73,6 +73,10 @@ Comando para crear las migraciones y agregar el registro inicial a la base de da
 }
 ```
 
+### Generacion de reporte
+Se agrego una ruta especial para reportes: `api/report` al dirigirse a esta ruta la api retorna un archivo PDF con el listado de todas las tiendas registradas.
+
+
 ### evidencias
 #### GET
 ![get](https://raw.githubusercontent.com/arthurfulldev/TiendaBNN/master/evidencias/GET.png "rutas restfull")
@@ -94,6 +98,17 @@ Comando para crear las migraciones y agregar el registro inicial a la base de da
 ![show](https://raw.githubusercontent.com/arthurfulldev/TiendaBNN/master/evidencias/SHOw.png "rutas restfull")
 *__fig. 7: evidencia 7.__*
 
+---
+
 #### BD
 ![show](https://raw.githubusercontent.com/arthurfulldev/TiendaBNN/master/evidencias/BD.png "evidencia registros bd")
+*__fig. 8: evidencia 8.__*
+
+---
+
+#### Reporte
+![Peticion PDF](https://raw.githubusercontent.com/arthurfulldev/TiendaBNN/master/evidencias/peticion_reporte.png.png "evidencia registros bd")
+*__fig. 8: evidencia 8.__*
+
+![Reporte PDF](https://raw.githubusercontent.com/arthurfulldev/TiendaBNN/master/evidencias/el_pdf.png.png "evidencia registros bd")
 *__fig. 8: evidencia 8.__*
