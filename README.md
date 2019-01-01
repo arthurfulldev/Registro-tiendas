@@ -91,5 +91,5 @@ Comando para crear las migraciones y agregar el registro inicial a la base de da
 *__fig. 6: evidencia 6.__*
 
 #### SHOW
-![show](https://raw.githubusercontent.com/arthurfulldev/TiendaBNN/master/evidencias/SHOW.png "rutas restfull")
+![show](https://raw.githubusercontent.com/arthurfulldev/TiendaBNN/master/evidencias/SHOw.png "rutas restfull")
 *__fig. 7: evidencia 7.__*
