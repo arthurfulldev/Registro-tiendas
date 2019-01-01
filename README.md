@@ -93,3 +93,7 @@ Comando para crear las migraciones y agregar el registro inicial a la base de da
 #### SHOW
 ![show](https://raw.githubusercontent.com/arthurfulldev/TiendaBNN/master/evidencias/SHOw.png "rutas restfull")
 *__fig. 7: evidencia 7.__*
+
+#### BD
+![show](https://raw.githubusercontent.com/arthurfulldev/TiendaBNN/master/evidencias/BD.png "evidencia registros bd")
+*__fig. 8: evidencia 8.__*
