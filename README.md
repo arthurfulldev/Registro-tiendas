@@ -107,8 +107,8 @@ Se agrego una ruta especial para reportes: `api/report` al dirigirse a esta ruta
 ---
 
 #### Reporte
-![Peticion PDF](https://raw.githubusercontent.com/arthurfulldev/TiendaBNN/master/evidencias/peticion_reporte.png.png "evidencia registros bd")
+![Peticion PDF](https://raw.githubusercontent.com/arthurfulldev/TiendaBNN/master/evidencias/peticion_reporte.png "evidencia registros bd")
 *__fig. 8: evidencia 8.__*
 
-![Reporte PDF](https://raw.githubusercontent.com/arthurfulldev/TiendaBNN/master/evidencias/el_pdf.png.png "evidencia registros bd")
+![Reporte PDF](https://raw.githubusercontent.com/arthurfulldev/TiendaBNN/master/evidencias/el_pdf.png "evidencia registros bd")
 *__fig. 8: evidencia 8.__*
