@@ -1,12 +1,19 @@
-# TiendaBNN
-Requerimiento Backend BNN
+# TiendaBNN ~ Requerimiento Backend BNN
 
+## Objetivo.
+Cubrir con el requerimiento solicitado donde se lista:
+* Llenar 5 tablas
+* Api restfull ( `GET`, `POST`, `PUT`, `DELETE`, `SHOW`, `EDIT`, `INDEX` ).
+* Aplicativo tienda.
+* Altas, baja, modificaciones reporte general.
+
+Se alcanzó el objetivo. En la sección evidencias se muestra la respuesta de cada una de las acciones http rest.
 
 ## Tecnologias implementadas.
 * PHP 5.3.36
 * Laravel 5.3.30
 
-## Instalacion
+## Instalacion de la api
 * clonar de github
 ```
     git clone https://github.com/arthurfulldev/TiendaBNN.git
@@ -34,7 +41,55 @@ FROM stores s
     INNER JOIN thownships t ON t.id = a.thownship_id;
 ```
 ### schema
+
+La base consta de 5 tablas a rellenar: stores, addresses, contries, states, thownships, las otras tres son creadas por laravel para la autentificacion. **Nota:** no se implemento autentificación para el aplicativo.
+
 ![schema](https://raw.githubusercontent.com/arthurfulldev/TiendaBNN/master/evidencias/schema.png "Schema de la base completo")
+*__fig. 1: data base shcema.__*
+
+### Antes de iniciar correr las migraciones y el seed
+Comando para crear las migraciones y agregar el registro inicial a la base de datos
+```
+    php artisan migrate --seed
+```
 
 ## Rest api routes
 ![logo](https://raw.githubusercontent.com/arthurfulldev/TiendaBNN/master/evidencias/restroutes.png "rutas restfull")
+*__fig. 2: Lista de rutas del aplicativo.__*
+
+## Pruebas Evidencias.
+
+### json mock postman
+```
+{
+	"logo" : "LOGO PUT",
+	"nombre_tienda" : "TIENDA NAME PUT",
+	"calle": "CALLE PUT",
+	"numero": "NUMERO PUT",
+	"pais": "PAIS PUT",
+	"entidad": "ENTIDAD PUT",
+	"alcaldia": "ALCALDIA PUT",
+	"cp": "99999"
+}
+```
+
+### evidencias
+#### GET
+![get](https://raw.githubusercontent.com/arthurfulldev/TiendaBNN/master/evidencias/GET.png "rutas restfull")
+*__fig. 3: evidencia 3.__*
+
+#### POST
+![post](https://raw.githubusercontent.com/arthurfulldev/TiendaBNN/master/evidencias/POST.png "rutas restfull")
+*__fig. 4: evidencia 4.__*
+
+#### PUT
+![put](https://raw.githubusercontent.com/arthurfulldev/TiendaBNN/master/evidencias/PUT.png "rutas restfull")
+*__fig. 5: evidencia 5.__*
+
+#### DELETE
+![delete](https://raw.githubusercontent.com/arthurfulldev/TiendaBNN/master/evidencias/DELETE.png "rutas restfull")
+*__fig. 6: evidencia 6.__*
+
+#### SHOW
+![show](https://raw.githubusercontent.com/arthurfulldev/TiendaBNN/master/evidencias/SHOW.png "rutas restfull")
+*__fig. 7: evidencia 7.__*
