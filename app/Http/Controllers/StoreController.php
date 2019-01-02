@@ -11,6 +11,8 @@ use TiendaBNN\State;
 use TiendaBNN\Thownship;
 use TiendaBNN\Address;
 use Mockery\CountValidator\Exception;
+use Carbon\Carbon;
+use Illuminate\Support\Facades\Storage;
 
 class StoreController extends Controller
 {
@@ -45,6 +47,14 @@ class StoreController extends Controller
      */
     public function store(Request $request)
     {
+        if( !isset( $request->logo) && !$request->logo == NULL){
+            return response()->json( array( 'success' => "No se envio archivo" ), 500);    
+        }
+    
+        $ext = $request->logo->getClientOriginalExtension();
+        $name = str_replace([ ' ', ':', '-' ], '', Carbon::now() ) . "_logo.$ext" ;
+        Storage::disk('logos')->putFileAs( '', $request->logo, $name );
+
         $country = Country::create([
             'name' => $request->pais
         ]);
@@ -64,7 +74,7 @@ class StoreController extends Controller
         ]);
         $store = Store::create([
             'name' => $request->nombre_tienda,
-            'logo' => $request->logo,
+            'logo' => $name,
             'address_id' => $address->id
         ]);
         
@@ -112,6 +122,15 @@ class StoreController extends Controller
      */
     public function update(Request $request, $id)
     {
+
+        if( !isset( $request->logo) && !$request->logo == NULL){
+            return response()->json( array( 'success' => "No se envio archivo" ), 500);    
+        }
+    
+        $ext = $request->logo->getClientOriginalExtension();
+        $name = str_replace([ ' ', ':', '-' ], '', Carbon::now() ) . "_logo.$ext" ;
+        Storage::disk('logos')->putFileAs( '', $request->logo, $name );
+
         $elemento = $this->queryShow($id);
         $store = Store::find($id)->address;
 
@@ -131,7 +150,7 @@ class StoreController extends Controller
 
         $store = Store::find($id);
         $store->name = $request->nombre_tienda;        
-        $store->logo = $request->logo;        
+        $store->logo = $name;        
 
         $country->save();
         $state->save();
